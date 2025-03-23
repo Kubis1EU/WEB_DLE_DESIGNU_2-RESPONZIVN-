@@ -96,17 +96,16 @@
     padding: 1.5rem 3.2rem;
     gap: 1rem;
     flex-direction: row-reverse;
-    max-width: calc(1120px + 6.4rem);
+    max-width: 76.4rem;
 }
 
-.zakonceni > .positions {
+.positions {
     position: relative;
     border-radius: 0.625rem;
     padding: 0;
-    max-height: fit-content;
 }
 
-.positions> div {
+.pozadi {
     display: none;
     position: absolute;
     right: 4rem;
@@ -119,7 +118,7 @@
 }
 
 
-.zakonceni p {
+.zakonceni > p {
     font-family: Roboto;
     font-size: 0.875rem;
     font-style: normal;
@@ -160,55 +159,55 @@
         grid-column-start: 4;
     }
 
-    .plusy p {
+    .plusy > p {
         font-size: 0.875rem;
         line-height: 1.25rem;
     }
 }
 
 @media (min-width: 1024px) {
-    .dum1 {
+    .aura {
         margin-top: 8rem;
         flex-wrap: nowrap;
-        max-width: calc(1120px + 6.4rem);
+        max-width: 76.4rem;
         padding-block: 0;
     }
 
-    .dum1 > div {
+    .bydleni > div {
         margin: 0 0 0 -2.375rem;
         padding: 4.5rem;
         padding-left: 8.5rem;
     }
 
-    .dum1 p {
+    .bydleni > p {
         font-size: 1rem;
         line-height: 1.75rem;
     }
 
-    .dum2 {
+    .zakonceni {
         margin-top: 40px;
         flex-wrap: nowrap;
         
     }
 
-    .dum2 p {
+    .zakonceni > p {
         font-size: 1rem;
         line-height: 1.75rem;
     }
 
-    .dum2 img {
+    .positions > img {
         max-width: max-content;
     }
 
-    .dum2 > .img-container {
+    .positions {
         padding: 0 0 4rem 4rem;
     }
 
-    .dum2 .img-container > div {
+    .positions > div {
         display: block;
     }
 
-    .dum2 > div:last-child {
+    .zakonceni > div:last-child {
         padding: 1rem 2rem 0 0;
     }
 }
