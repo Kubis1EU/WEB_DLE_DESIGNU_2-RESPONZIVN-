@@ -1,0 +1,16 @@
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+p{
+  overflow-wrap: break-word;
+}
