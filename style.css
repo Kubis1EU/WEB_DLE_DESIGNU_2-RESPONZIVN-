@@ -1,335 +1,221 @@
-
-.obrazky{
+.container {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
-    gap: 2rem;
-    margin: 4.75rem 10rem 7.5rem 10rem
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+    max-width: 1440px;
+    margin: 0;
 }
 
-.obrazky > img{
-    width: 100%;
-    height: 100%;
+.obrazky {
+    padding: 1.25rem;
+    gap: 1.06rem;
+    margin-top: 40px;
 }
 
-.plusy{
-    display: flex;
+.obrazky > img {
+    width: 22rem;
+    height: 17.5rem;
+    border-radius: 10px;
+}
+
+.plusy {
+    padding: 0 3.2rem;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 4rem;
-    margin-bottom: 2rem;
 }
 
-.plusy > p{
-    color: #7A9D8C;
+.plusy > h2 {
+    color: var(--Primary, #7A9D8C);
     text-align: center;
     font-family: Roboto;
-    font-size: 2.25rem;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
-    line-height: 2px;
-}
+    line-height: 2rem;
+}   
 
-.vyhody{
+.plusy > div {
     display: grid;
-    grid-template-columns: repeat(4, auto);
-    column-gap: 7.813rem;
-    row-gap: 2rem;
-    width: 58.563rem;
+    grid-template-columns: 1fr 1fr;
+    align-items: baseline;
+    gap: 2.35rem;
 }
 
-.vyhody > div > p{
-    height: 2.625rem;
+.vyhody > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 10rem;
+    gap: 1.25rem;
+}
+
+.vyhody > div > img {
+    width: fit-content;
+    object-fit: none;
+}
+
+.vyhody > div > p {
     color: #050706;
     text-align: center;
     font-family: Roboto;
-    font-size: 0.875rem;
+    font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
     line-height: 1rem;
 }
 
-.vyhody > div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.Vector{
-    width: 3.5rem;
-    height: 4rem;
-}
-
-.Vector1{
-    width: 4.5rem;
-    height: 3.5rem;
-}
-
-.Vector2{
-    width: 3.5rem;
-    height: 4rem;
-}
-
-.Vector3{
-    width: 4rem;
-    height: 4rem;
-}
-
-.Vector4{
-    width: 3.5rem;
-    height: 2.8rem;
-}
-
-.Vector5{
-    width: 4rem;
-    height: 3.5rem;
-}
-
-.Vector6{
-    width: 4.875rem;
-    height: 4rem;
-}
-
-.Vector7{
-    width: 4rem;
-    height: 4rem;
-}
-
-.vyhody > div{
-    align-items: center;
-    gap: 1.25rem;
-}
-
-.aura{
-    margin-left: 10rem;
-    margin-right: 10rem;
-    display: flex;
-    justify-content: center;
+.aura {
+    padding: 1.5rem 3.2rem;
+    margin-top: 20px;
 }
 
 .bydleni{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 7rem;
-    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
-    background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
-    border-radius: 10px;
-}
-
-.bydleni > img{
+    background: linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%);
+    border-radius: 0.625rem;
     width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray -112.644px 0px / 174.837% 100% no-repeat;
+    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
 }
 
-.text{
-    color: #050706;
+.bydleni > img {
+    border-radius: 0.625rem;
+    width: 100%;
+}
+
+.bydleni > p {
     font-family: Roboto;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 175%;
-    width: 24rem;
-    margin: 4.5rem 6rem;
+    line-height: 1.5rem;
+    margin: 1.313rem 1.5rem 4.625rem 1.5rem;
 }
 
-.zakonceni{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6rem;
-    margin-bottom: 6rem;
+.zakonceni {
+    padding: 1.5rem 3.2rem;
+    gap: 1rem;
+    flex-direction: row-reverse;
+    max-width: 76.4rem;
+    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
 }
 
-.positions{
-    display: flex;
-    width: 46.063rem;
-    height: 29.875rem;
+.positions {
     position: relative;
+    border-radius: 0.625rem;
+    padding: 0;
+    max-height: fit-content;
 }
 
-.positions > img{
-    position: relative;
-    width: 90%;
-    height: 90%;
-    border-radius: 10px;
-    bottom: 2rem;
-    left: 4rem;
+.positions > img {
+    border-radius: 0.625rem;
 }
 
-.positions > div{
-    width: 90%;
-    height: 90%;
+.pozadi {
     position: absolute;
-    border-radius: 10px;
-    background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
-    box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
-    top: 2rem;
     right: 4rem;
+    top: 4rem;
+    background: linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%);
+    width: 80%;
+    height: 80%;
+    border-radius: 0.625rem;
 }
 
-.zakonceni > p{
-    width: 22rem;
-    color: #050706;
+
+.zakonceni > p {
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 0.875rem;
+    font-style: normal;
     font-weight: 400;
-    line-height: 175%;
+    line-height: 1.5rem;
 }
 
-@media (max-width: 500px){
-    .obrazky{
+@media (min-width: 768px) {
+    .obrazky {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 0.75rem;
-        gap: 1.068rem;
-        margin-top: 3.375rem;
+        gap: 2rem;
         margin-bottom: 4.313rem;
+        width: 100%;
     }
 
-    .obrazky > img{
-        flex-shrink: 1;
-        flex-basis: 150;
-        width: 40%;
-        height: 40%;
+    .obrazky  > img{
+        height: 50%;
+        width: 50%;
     }
 
-    .plusy{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 1.875rem;
-        margin-bottom: 2rem;
+    .plusy {
+        gap: 4rem;
+        margin-top: 7.5rem;
     }
 
-    .plusy > p{
-        color: #7A9D8C;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 1.75rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 2px;
+    .plusy > h2 {
+        font-size: 2.25rem;
+        line-height: 2.25rem; 
     }
 
-    .vyhody{
-        display: flex;
-        flex-direction: row;
-        width: 18rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-        row-gap: 2rem;
+    .plusy > div {
+        max-width: 1100px;
+        width: 100%;
+        justify-content: space-between;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
     }
 
-    .vyhody > div > p{
-        width: 8.5rem;
-        height: 2.625rem;
-        color: #050706;
-        text-align: center;
-        font-family: Roboto;
-        font-size: 0.75rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 1rem;
-    }
-
-    .vyhody > div{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        flex-shrink: 1;
+    .vyhody > div:nth-child(5) {
+        grid-row-start: 1;
+        grid-column-start: 3;
     }
     
-    .aura{
-        margin-left: 3.188rem;
-        margin-right: 3.188rem;
-        display: flex;
-        justify-content: center;
-        margin-bottom: 8rem;
+    .vyhody > div:nth-child(6) {
+        grid-row-start: 1;
+        grid-column-start: 4;
     }
 
-    .bydleni{
-        display: flex;
-        width: 18rem;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 2rem;
-        padding: 0;
-        filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
-        background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
-        border-radius: 10px;
-    }
-
-    .bydleni > img{
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray -112.644px 0px / 174.837% 100% no-repeat;
-        margin-bottom: 1.313rem;
-        position: relative;
-    }
-
-    .text{
-        color: #050706;
-        font-family: Roboto;
+    .vyhody > div > p {
         font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5rem;
-        width: 15.063rem;
-        margin-bottom: 4.625rem;
+        line-height: 1.25rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aura {
+        margin-top: 8rem;
+        flex-wrap: nowrap;
+        max-width: 76.4rem;
+        padding-block: 0;
     }
 
-    .zakonceni{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        position: relative;
+    .bydleni > p {
+        font-size: 1rem;
+        line-height: 1.75rem;
     }
 
-    .positions{
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .zakonceni {
+        margin-top: 40px;
+        flex-wrap: nowrap;
     }
 
-    .positions > img{
-        flex-shrink: 1;
-        width: 100%;
-        height: 100%;
-        border-radius: 0.625rem;
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
-        box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
+    .zakonceni p {
+        font-size: 1rem;
+        line-height: 1.75rem;
     }
 
-    .positions > div{
-        width: 0;
+    .zakonceni img {
+        max-width: max-content;
+    }
+
+    .positions {
+        padding: 0 0 4rem 4rem;
+    }
+
+    .positions > div {
         height: 0;
+        width: 0;
     }
 
-    .zakonceni > p{
-        color: #050706;
-        font-family: Roboto;
-        font-size: 0.875rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 1.5rem;
-        width: 18rem;
-        position: relative;
+    .positions > div:last-child {
+        padding: 1rem 2rem 0 0;
     }
 }
