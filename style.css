@@ -8,9 +8,12 @@
 }
 
 .obrazky {
+    align-self: center;
     padding: 1.25rem;
     gap: 1.06rem;
-    margin-top: 40px;
+    margin-top: 5rem;
+    margin-bottom: 7.5rem;
+    align-items: center;
 }
 
 .obrazky > img {
@@ -35,9 +38,9 @@
     line-height: 2rem;
 }   
 
-.plusy > div {
+.vyhody {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     align-items: baseline;
     gap: 2.35rem;
 }
@@ -66,116 +69,238 @@
 }
 
 .aura {
-    padding: 1.5rem 3.2rem;
-    margin-top: 20px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
 }
 
 .bydleni{
-    display: flex;
+    width: 100%;
+    height: 100%;
     flex-direction: row;
+    align-items: center;
     background: linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%);
     border-radius: 0.625rem;
-    width: 100%;
-    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
 }
 
 .bydleni > img {
     border-radius: 0.625rem;
     width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray -112.644px 0px / 174.837% 100% no-repeat;
 }
 
-.bydleni > p {
+.text {
+    color: #050706;
     font-family: Roboto;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 1.5rem;
-    margin: 1.313rem 1.5rem 4.625rem 1.5rem;
+    line-height: 175%;
+    width: 24rem;
+    margin: 4.5rem 6rem;
 }
 
-.zakonceni {
-    padding: 1.5rem 3.2rem;
-    gap: 1rem;
+.zakonceni{
+    display: flex;
     flex-direction: row-reverse;
-    max-width: 76.4rem;
-    filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+    margin-bottom: 6rem;
 }
 
-.positions {
+.positions{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 46rem;
+    height: 29.5rem;
     position: relative;
-    border-radius: 0.625rem;
-    padding: 0;
-    max-height: fit-content;
 }
 
-.positions > img {
-    border-radius: 0.625rem;
+.positions > img{
+    position: relative;
+    width: 65%;
+    height: 90%;
+    border-radius: 10px;
+    margin-bottom: 4rem;
+    margin-left: 4rem;
 }
 
-.pozadi {
+.positions > div{
+    width: 65%;
+    height: 90%;
     position: absolute;
-    right: 4rem;
-    top: 4rem;
-    background: linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%);
-    width: 80%;
-    height: 80%;
-    border-radius: 0.625rem;
+    border-radius: 10px;
+    background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
+    box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
+    margin-top: 4rem;
+    margin-right: 4rem;
 }
 
-
-.zakonceni > p {
+.zakonceni > p{
+    width: 22rem;
+    color: #050706;
     font-family: Roboto;
-    font-size: 0.875rem;
-    font-style: normal;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 175%;
 }
 
-@media (min-width: 768px) {
-    .obrazky {
+@media (max-width: 762px){
+    .obrazky{
         display: flex;
         flex-direction: row;
-        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;         
+        row-gap: 0.75rem;
+        gap: 1.068rem;
+        margin-top: 3.375rem;
         margin-bottom: 4.313rem;
-        width: 100%;
     }
 
-    .obrazky  > img{
-        height: 50%;
-        width: 50%;
+    .obrazky > img{
+        flex-shrink: 1;
+        flex-basis: 150;
+        width: 40%;
+        height: 40%;
     }
 
-    .plusy {
-        gap: 4rem;
-        margin-top: 7.5rem;
+    .plusy{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.875rem;
+        margin-bottom: 2rem;
     }
 
-    .plusy > h2 {
-        font-size: 2.25rem;
-        line-height: 2.25rem; 
+    .plusy > p{
+        color: #7A9D8C;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 1.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2px;
     }
 
-    .plusy > div {
-        max-width: 1100px;
-        width: 100%;
-        justify-content: space-between;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
+    .vyhody{
+        display: flex;
+        flex-direction: row;
+        width: 18rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        row-gap: 2rem;
     }
 
-    .vyhody > div:nth-child(5) {
-        grid-row-start: 1;
-        grid-column-start: 3;
+    .vyhody > div > p{
+        width: 8.5rem;
+        height: 2.625rem;
+        color: #050706;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 0.75rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1rem;
+    }
+
+    .vyhody > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-shrink: 1;
     }
     
-    .vyhody > div:nth-child(6) {
-        grid-row-start: 1;
-        grid-column-start: 4;
+    .aura{
+        margin-left: 3.188rem;
+        margin-right: 3.188rem;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 
-    .vyhody > div > p {
+    .bydleni{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
+        padding: 0;
+        filter: drop-shadow(0px 4px 33px rgba(0, 0, 0, 0.15));
+        background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
+        border-radius: 10px;
+        gap: 1.3rem;
+    }
+
+    .bydleni > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 65.62%, rgba(0, 0, 0, 0.40) 100%), url(<path-to-image>) lightgray -112.644px 0px / 174.837% 100% no-repeat;
+        position: relative;
+    }
+
+    .text{
+        font-family: Roboto;
         font-size: 0.875rem;
-        line-height: 1.25rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        margin: 1.313rem 1.5rem 4.625rem 1.5rem;
+    }
+
+    .zakonceni{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        position: relative;
+        margin: 0;
+    }
+
+    .positions{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .positions > img{
+        flex-shrink: 1;
+        width: 80%;
+        height: 80%;
+        border-radius: 0.625rem;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
+        box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
+        margin: 0;
+    }
+
+    .positions > div{
+        width: 0;
+        height: 0;
+    }
+
+    .zakonceni > p{
+        color: #050706;
+        font-family: Roboto;
+        font-size: 0.875rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5rem;
+        width: 18rem;
+        position: relative;
     }
 }
 
@@ -211,8 +336,8 @@
     }
 
     .positions > div {
-        height: 0;
-        width: 0;
+        height: 100%;
+        width: 100%;
     }
 
     .positions > div:last-child {
