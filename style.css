@@ -247,13 +247,18 @@
         position: relative;
     }
 
+    .bydleni > div{
+        padding: 4rem;
+        padding-left: 7rem;
+        margin: 0 0 0 -2.375rem;
+    }
+
     .text{
         font-family: Roboto;
         font-size: 0.875rem;
         font-style: normal;
         font-weight: 400;
         line-height: 1.5rem;
-        margin: 1.313rem 1.5rem 4.625rem 1.5rem;
     }
 
     .zakonceni{
