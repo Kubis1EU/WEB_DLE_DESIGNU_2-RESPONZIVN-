@@ -108,6 +108,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    align-self: center;
     gap: 6rem;
     margin-bottom: 6rem;
 }
@@ -124,22 +125,22 @@
 
 .positions > img{
     position: relative;
-    width: 65%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    margin-bottom: 4rem;
-    margin-left: 4rem;
+    top: 4rem;
+    right: 4rem;
 }
 
 .positions > div{
-    width: 65%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     border-radius: 10px;
     background: var(--Secondary-gradient, linear-gradient(42deg, #ABA8BF 0%, #F5E9F3 38.5%));
     box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
-    margin-top: 4rem;
-    margin-right: 4rem;
+    bottom: 4rem;
+    left: 4rem;
 }
 
 .zakonceni > p{
@@ -166,8 +167,8 @@
     .obrazky > img{
         flex-shrink: 1;
         flex-basis: 150;
-        width: 40%;
-        height: 40%;
+        width: 45%;
+        height: 45%;
     }
 
     .plusy{
@@ -178,7 +179,7 @@
         margin-bottom: 2rem;
     }
 
-    .plusy > p{
+    .plusy > h1{
         color: #7A9D8C;
         text-align: center;
         font-family: Roboto;
@@ -227,7 +228,7 @@
 
     .bydleni{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
@@ -263,9 +264,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
         gap: 1rem;
-        position: relative;
         margin: 0;
     }
 
@@ -279,12 +278,14 @@
 
     .positions > img{
         flex-shrink: 1;
-        width: 80%;
-        height: 80%;
+        width: 60%;
+        height: 60%;
         border-radius: 0.625rem;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat;
         box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.15);
         margin: 0;
+        top: 0;
+        right: 0;
     }
 
     .positions > div{
@@ -299,7 +300,6 @@
         font-style: normal;
         font-weight: 400;
         line-height: 1.5rem;
-        width: 18rem;
         position: relative;
     }
 }
